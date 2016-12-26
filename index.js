@@ -4,9 +4,7 @@ const Alexa = require('alexa-sdk');
 const cards = require('./cards.json');
 const ld = require('lodash');
 
-// OPTIONAL: amzn1.echo-sdk-ams.app.[your-unique-value-here];
-const APP_ID = undefined;
-
+const APP_ID = 'amzn1.ask.skill.a404dd31-1199-4fda-a182-ef2184be4724';
 const handlers = {
     LaunchRequest: function LaunchRequest() {
         this.emit('GetRandomCard');
