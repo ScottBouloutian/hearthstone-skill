@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "parserOptions": {
+        "sourceType": "script"
+    },
+    "rules": {
+        "indent": ["error", 4]
+    }
+}

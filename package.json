@@ -1,0 +1,26 @@
+{
+  "name": "hearthstone-skill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "tape tests/**/*.js",
+    "prebuild": "node scripts/update-cards.js",
+    "build": "sh scripts/lambda-build.sh"
+  },
+  "author": "Scott Bouloutian",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "lodash": "^4.17.3",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "aws-lambda-mock-context": "^3.0.1",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "tape": "^4.6.3"
+  }
+}
